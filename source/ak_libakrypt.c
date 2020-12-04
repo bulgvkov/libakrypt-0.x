@@ -169,6 +169,12 @@
                                                    "incorrect testing of kuznechik block cipher" );
     return ak_false;
   }
+ /* тестируем корректность реализации блочного шифра SM4 */
+  if( ak_bckey_test_sm4()  != ak_true ) {
+    ak_error_message( ak_error_get_value(), __func__ ,
+                                                   "incorrect testing of sm4 block cipher" );
+    return ak_false;
+  }
 
 // /* тестируем дополнительные режимы работы */
 //  if( ak_bckey_test_mgm()  != ak_true ) {
