@@ -8,7 +8,7 @@
 
 Реализация SM4 из OpenSSL (https://github.com/openssl/openssl/blob/master/crypto..) встроена в libakrypt (по аналогии с Кузнечиком). Написаны тесты, они запускаются в рамках example-hello.
 
-##Тесты
+## Тесты
 
 Функция для тестов: bool_t ak_bckey_test_sm4(void)
 Лежит в файле: ak_sm4.c
